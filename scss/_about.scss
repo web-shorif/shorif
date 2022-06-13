@@ -1,0 +1,87 @@
+.maan-about-area{
+    display: block;
+    // overflow: hidden;
+    padding: 120px 0 80px;
+    position: relative; 
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        display: block;
+        height: 80px;
+        width: 80px;
+        background: url(../images/shap-img/shap-1.svg)
+    }
+}
+.about-image{
+    display: block; 
+    height: 680px;
+    max-width: 100%;
+    width: 100%;
+}
+.about-text-area{
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    margin-left: 30px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 10%;
+        top: -25%;
+        display: block;
+        background: url(../images/shap-img/shap-2.svg);
+        width: 35px;
+        height: 35px;
+    }
+}
+.title{
+    h6{
+        font-family: 'Jost'; 
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px; 
+        color: #887EF9;
+        text-transform: capitalize;
+        padding-bottom: 9px;
+        display: flex;
+        align-items: center;
+        .title-img{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin-right: 0.8em;
+        }
+    }
+    h2{
+        font-family: 'Italiana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px; 
+        color: #1F2024;
+        max-width: 617px;
+        padding-bottom: 22px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    h5{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px; 
+        color: #1F2024;
+        max-width: 620px;
+        padding-bottom: 20px; 
+        margin-bottom: 0;
+    }
+    .about-description{
+        max-width: 620px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,83 @@
+.maan-achievement-area{
+    display: block;
+    overflow: hidden;
+    padding: 91px 0 120px;
+    background: linear-gradient(93.43deg, #BADFF9 0.39%, #E3E1FF 98.34%); 
+    position: relative;
+} 
+.chievement-heading{
+    display: block;
+    text-align: center;
+    font-family: 'Italiana'; 
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px; 
+    color: #1F2024;
+    margin-bottom: 50px;
+}
+.achievement-wrap{
+    display: grid;
+    gap: 0 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense; 
+}
+.achievement-grid{
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(113.46deg, rgba(255, 255, 255, 0.61) 3.69%, rgba(255, 255, 255, 0.06) 96.8%); 
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.03); 
+    border-radius: 25px;  
+}
+.fast-grid{
+    position: relative;
+    z-index: 1;
+}
+.last-grid{
+    position: relative;
+    z-index: 2;
+}
+.achievement-img{
+    display: block;
+    margin: 0 auto;
+}
+.achievement-count{
+    padding-top: 15px;
+    display: block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px; 
+    text-align: center; 
+    color: #1F2024;  
+       
+}
+.achievement-driscaption{
+    display: block;
+    padding-top: 5px;
+}
+.achievement-shap-area{   
+    .achievement-shap-1{
+        position: absolute;
+        left: 10.7%;
+        top: 28%;
+        height: 147px;
+        width: 147px; 
+    }
+    .achievement-shap-2{
+        position: absolute;
+        right: 10.7%;
+        bottom: 14%;
+        height: 147px;
+        width: 147px;  
+    } 
+    .achievement-shap-3{
+        position: absolute;
+        right: 4%;
+        top: 62%;
+        height: 40px;
+        width: 40px;
+        display: block; 
+    } 
+} 

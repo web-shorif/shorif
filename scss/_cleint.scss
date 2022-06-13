@@ -1,0 +1,63 @@
+.maan-cleint-area{ 
+    padding: 120px 0;
+    background: #fff;
+    position: relative;
+    &:after{
+        content:"";
+        position: absolute;
+        left: 4%;
+        top: 53%;
+        width: 50px;
+        height: 42px;
+        background:url(../images/shap-img/shap-2.svg);
+        background-repeat: no-repeat;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -107px;
+        right: 50px;
+        height: 197px;
+        width: 125px;
+        background: url(../images/shap-img/shap-11.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} 
+.bottom-boder{ 
+    display: block;
+    height: 1px; 
+    margin: 0 auto;
+    background: #E9E9EA;
+    position: relative;
+    top: 120px;
+}
+.cleint-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+    .cleint-logo-img-1{
+        height: 53px;
+        max-width: 217px;
+        display: block;
+    }
+    .cleint-logo-img-2{
+        height: 53px;
+        max-width: 180px;
+        display: block;
+    }
+    .cleint-logo-img-3{
+        height: 53px;
+        max-width: 244px;
+        display: block;
+    }
+    .cleint-logo-img-4{
+        height: 53px;
+        display: block;
+        max-width: 300px;
+    } 
+    img{
+        cursor: pointer;
+    }
+}

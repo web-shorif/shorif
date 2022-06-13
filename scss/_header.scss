@@ -1,0 +1,194 @@
+.maan-header-area {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 30px rgba(252, 232, 241, 0.5);
+    padding: 2.5rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99999999; 
+}
+.header-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    .header-logo{
+        img{
+            max-width: 17rem;
+            display: block;
+            object-fit: cover;
+        }
+    }
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+    li{
+        a{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px; 
+            letter-spacing: 0.004em; 
+            text-transform: capitalize;
+            color: #1F2024;
+            padding-right: 4rem;
+            transition: .3s;
+            &:hover{  
+                color:  rgb(116, 167, 240);
+            }
+        }
+    }
+}
+.contact{
+    display: flex;
+    align-items: center; 
+    li{
+        .sign-btn{
+            font-family: 'Jost'; 
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;   
+            text-transform: capitalize;
+            display: inline-block;
+            color: #fff;  
+            margin-right: 2rem;
+            transition: .3s; 
+            padding: 1rem 2.6rem; 
+            background: #12CCE5;
+            border-radius: 8px;
+            transition:.3s; 
+            &:hover{
+                background: #103b41bd; 
+            }
+        }
+
+    }
+    .sidebar-menu{
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: #1F2024;
+        margin-left: 2rem;
+        cursor: pointer; 
+        display: none;
+    }
+}
+ 
+/*nice-select */
+.maan-language{
+    border: none;
+    color: #1F2024; 
+    font-weight: 500;
+    font-size: 1.4rem; 
+    line-height: 2.2rem;  
+    padding: 1rem 3.5rem;  
+    text-align: center;
+    height: auto;
+    display: block;
+    background: #fff; 
+    box-shadow: 3px 4px 20px rgba(14, 60, 77, 0.2);
+    border-radius: 8px;
+    span{
+        color: #1F2024 !important;
+        font-weight: 500;
+        font-size: 1.4rem;  
+        transition:.3s; 
+        font-family: 'Jost';
+        position: relative;
+        right: 1rem;
+    &:hover{
+        color: #FF2525; 
+    } 
+    }
+    &::after{
+        content: " "; 
+        border-bottom: 2px solid #1F2024 !important;
+        border-right: 2px solid #1F2024 !important;  
+        right: 2.5rem; 
+        margin-top: -0.5rem;  
+    } 
+    .list{
+        transition:.3s;
+        text-transform: uppercase;
+        left: -8rem;
+        li{
+            border-radius: 0.1rem;
+            color: #1F2024;
+            &:hover{ 
+                color: #FFFFFF;
+                background: linear-gradient(93.43deg, #BADFF9 0.69%, #E3E1FF 98.34%); 
+            }
+        } 
+    } 
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    background: linear-gradient(93.43deg, #BADFF9 0.69%, #E3E1FF 98.34%); 
+}
+.nice-select .option { 
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+// sidebar-menu  
+.sidebar-menus{  
+    width: 100%;
+    position: fixed;
+    top: -100%; 
+    height: 100%;
+    z-index: 9999999;
+    background: rgba(19, 63, 89, 0.752); 
+    opacity: 1;
+    transition: .5s;
+    .remove-one{
+        color: #fff;
+        background: #000;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        font-family: 'Jost';
+        font-size: 2.2rem; 
+        line-height: 0rem;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 2rem; 
+        top: 8rem;
+        left: auto;
+        z-index: 2;
+    }
+    &.active{
+        top: 0;
+    } 
+    .nav-menu{ 
+        margin-top: 8rem; 
+        margin-left: 1rem; 
+        li{
+            display: block; 
+            list-style: none;
+            transition: .5s;
+            position: relative;
+            z-index: 1;
+            a{ 
+                display: inline-block;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 1.2; 
+                color: #fff; 
+                padding-bottom: 2rem;
+                padding-left: 1rem;
+                text-transform: capitalize;
+                transition: .5s; 
+                &:hover{
+                    color: #F333c2;  
+                }
+            }  
+        } 
+    } 
+} 
